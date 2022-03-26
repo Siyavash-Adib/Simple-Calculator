@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  display: grid;
+  place-content: center;
+  gap: 25px;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow:
+    0 0 10px 5px #BADA55;
+  background-color: #BADA55;
+  /* font-family: 'Creepster', cursive; */
+  font-family: 'Monoton', cursive;
+  font-size: 3vw;
+}
