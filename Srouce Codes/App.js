@@ -99,9 +99,13 @@ function calculatorHandleInput(newInput) {
 
     case '.':
       if(!latestInput.includes('.')) {
-        latestInput += newInput;
-        calculatorBuffer.inputString.pop();
-        calculatorBuffer.inputString.push(String(latestInput))
+        if(isNaN(latestInput)) {
+          calculatorBuffer.inputString.push('0.');
+        } else {
+          latestInput += newInput;
+          calculatorBuffer.inputString.pop();
+          calculatorBuffer.inputString.push(String(latestInput))
+        }
       }
       break;
 
