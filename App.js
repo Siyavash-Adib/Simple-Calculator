@@ -20,7 +20,7 @@ function operate(arg1, arg2, operation) {
 
 function multiOperation(operationString) {
   let opStringCopy = operationString.split(/\s+/g);
-  console.log(`1: opStringCopy : ${opStringCopy}`);
+  // console.log(`1: opStringCopy : ${opStringCopy}`);
 
 if ((/[\+\-\*\/]/).test(opStringCopy[opStringCopy.length - 1])) {
     opStringCopy.pop();
@@ -32,7 +32,7 @@ if ((/[\+\-\*\/]/).test(opStringCopy[0])) {
       opStringCopy[0] *= -1;
     }
   }
-  console.log(`2: opStringCopy : ${opStringCopy}`);
+  // console.log(`2: opStringCopy : ${opStringCopy}`);
 
   for (let i = 0; i < opStringCopy.length; i++) {
 
@@ -72,7 +72,7 @@ function calculatorHandleInput(newInput) {
 
   switch (newInput) {
     case '=':
-      console.log(calculatorBuffer.inputString);
+      // console.log(calculatorBuffer.inputString);
       calculatorBuffer.inputString = [String(multiOperation(calculatorBuffer.inputString.join(" ")))];
       break;
 
